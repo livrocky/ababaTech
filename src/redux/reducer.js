@@ -42,10 +42,10 @@ function setLoginError(loginError) {
 
 function callLoginApi(email, password, callback) {
   setTimeout(() => {
-    if (email === 'admin@example.com' && password === 'admin') {
+    if (email === 'ababa@test.lt' && password === 'secret123') {
       return callback(null);
     } else {
-      return callback(new Error('Invalid email and password'));
+      return callback(new Error('Invalid email and/or password'));
     }
   }, 1000);
 }
